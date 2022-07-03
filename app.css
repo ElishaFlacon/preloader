@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Quicksand:wght@700&display=swap');
+
+html {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    background-color: #333;
+}
+
+body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    background-color: #333;
+}
+
+.app-preload {
+    overflow: hidden;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.preloader {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: #333;
+    z-index: 1001;
+}
+
+.preloader__container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+i {
+    font-size: 8vh;
+    position: relative;
+}
+
+.fa-angle-left {
+    color: #EC3B88;
+    right: 100%;
+    animation: leftArrowAnim 0.6s 0s forwards ease-in-out;
+}
+
+.fa-angle-right {
+    color: #37DD6F;
+    left: 100%;
+    animation: rightArrowAnim 0.6s 0.9s forwards ease-in-out;
+}
+
+h1 {
+    position: relative;
+    bottom: 100%;
+    left: 30%;
+    padding: 0px 0px 8px 0px;
+    font-size: 11vh;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    color: #47EFE3;
+    animation: slashAnim 0.3s 0.8s forwards ease-in-out;
+}
+
+.preloader__name-container {
+    position: relative;
+    bottom: 35%;
+}
+
+.preloader__name {
+    opacity: 0%;
+    color: #47EFE3;
+    font-size: 4vh;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    text-shadow: 0px 0px 6px rgba(71, 239, 227, 0.6);
+    animation: nameAnim 0.3s 1.6s forwards ease-in-out;
+}
+
+.loaded_look {
+    transition: 5s;
+}
+
+.loaded_hiding {
+    transition: 0.4s opacity;
+    opacity: 0;
+}
+
+.loaded {
+    display: none;
+}
+
+@keyframes slashAnim {
+    0% {
+        bottom: 100%;
+        left: 30%;
+    }
+
+    100% {
+        left: 0%;
+        bottom: 0%;
+    }
+}
+
+@keyframes rightArrowAnim {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+@keyframes leftArrowAnim {
+    0% {
+        right: 100%;
+    }
+
+    100% {
+        right: 0%;
+    }
+}
+
+@keyframes nameAnim {
+    0% {
+        opacity: 0%;
+    }
+
+    0% {
+        text-shadow: 0px 0px 30px rgba(71, 239, 227, 0.8);
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}
