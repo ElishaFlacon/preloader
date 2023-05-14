@@ -15,9 +15,8 @@
   🛠️ Инструменты, которые использовались при разработке прелоадера:
 </h2>
 
-- html
-- css
-- js
+- JavaScript
+- HTML CSS
 
 
 
@@ -29,9 +28,9 @@
   🚀 Зпуск приложения:
 </h2>
 
-- git clone https://github.com/ElishaFlacon/preloader.git
-- cd preloader
-- start index.html
+- `git clone https://github.com/ElishaFlacon/preloader.git`
+- `cd preloader`
+- `start index.html`
 <h3>
     Запускаем, не работет, ура! 🗿🚬
 </h3>
